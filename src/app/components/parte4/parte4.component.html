@@ -1,0 +1,19 @@
+<button [disabled]="desactivado">Titulo </button><br>
+<input type="text" [ngModel]="titulo">
+<!--Evento--><br>
+<input type="text" (ngModel)="titulo"><br>
+<!--Evento y template--><br>
+<input type="text" [(ngModel)]="titulo"><br>
+<h1>Prueba detexto en evento {{titulo}}</h1>
+
+<!--Evento y template + other event--><br>
+<input type="text" [(ngModel)]="titulo" > <br>
+<button (click)="desactivado=!desactivado">Activar - Desactivar </button>
+
+<h1>Prueba detexto en evento {{seleccion}}</h1>
+<select [(ngModel)]="seleccion">
+    <option value="Toyota">Toyota    </option>
+    <option value="Mazda">Mazda</option>
+    <option value="Nissan">Nissan</option>
+</select>
+

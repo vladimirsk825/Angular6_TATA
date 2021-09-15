@@ -22,6 +22,6 @@ user : Usuario = <Usuario>
   }
 mostrar():void{
   console.log(this.user.Nombre);
-  
+    
 }
-}
+} 
