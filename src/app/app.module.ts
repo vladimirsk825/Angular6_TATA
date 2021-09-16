@@ -8,6 +8,7 @@ import { Parte4Component } from './components/parte4/parte4.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { User2Component } from './components/user2/user2.component';
 
 
 
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     UserComponent,
     Parte4Component,
-    LoginComponent
+    LoginComponent,
+    User2Component
   ],
   imports: [
     BrowserModule,
