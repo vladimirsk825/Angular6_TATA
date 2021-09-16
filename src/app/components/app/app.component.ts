@@ -1,28 +1,31 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
 
- usuarios: any[] 
-
+signupForm: FormGroup
  constructor (
-   private _http: HttpClient)
- {}
- 
- 
- ngOnInit(){
- 
-  this._http.get('https://jsonplaceholder.typicode.com/users')
-  .subscribe(( datos: any[] ) => this.usuarios = datos)   
+   private _builder: FormBuilder
+ )
+ {
+   this.signupForm=this._builder.group({
+    nombre: [''],
+    usuario:['', Validators.required],
+    email:['',Validators.compose([Validators.email,Validators.required])],
+    clave:['',Validators.required]
+   })
  }
  
- borrarUsuario(id: number){
-   this.usuarios = this.usuarios.filter(usuario => usuario.id != id )
+ enviar(values){
+   console.log(values)
  }
+
+
 
 } 

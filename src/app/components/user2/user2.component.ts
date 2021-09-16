@@ -20,7 +20,7 @@ export class User2Component  {
   }
 BorrarUsuario(id: number){
   /*this.borrar.emit(id)*/
-  this._app.usuarios = this._app.usuarios.filter(usuario => usuario.id != id )
+ /* this._app.usuarios = this._app.usuarios.filter(usuario => usuario.id != id )*/
 
 }
 
