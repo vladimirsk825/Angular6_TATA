@@ -26,6 +26,6 @@ signupForm: FormGroup
    console.log(values)
  }
 
-
+ title:string = "Directivas"
 
 } 

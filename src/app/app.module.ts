@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { User2Component } from './components/user2/user2.component';
+import { MiDirectivaDirective } from './directives/mi-directiva.directive';
 
 
 
@@ -19,7 +20,8 @@ import { User2Component } from './components/user2/user2.component';
     UserComponent,
     Parte4Component,
     LoginComponent,
-    User2Component
+    User2Component,
+    MiDirectivaDirective
   ],
   imports: [
     BrowserModule,
